@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# ♻️ Gamified AI Recycle Bin - Frontend
 
-## Project info
+The frontend of **Gamified AI Recycle Bin**, a web application that uses AI to help users sort waste correctly and turns recycling into a game with points and rewards. Built with **React 19**, **TypeScript** and **Vite**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+> 📝 *Edit the Features and Screenshots sections below to match what your app currently does.*
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Overview
 
-**Use Lovable**
+Gamified AI Recycle Bin helps users identify and sort their waste with AI assistance and earn points and rewards for doing it right. This repository contains the client-side application, which connects to the backend API (see [Backend](#-backend)).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🤖 AI-powered waste identification and sorting guidance (e.g., recyclable, organic, hazardous)
+- 🎮 Gamification: points, levels and rewards for correct sorting
+- 👤 User accounts and profile
+- 📊 Activity history / progress tracking
+- 📱 Responsive design for desktop and mobile
 
-**Use your preferred IDE**
+*(Replace or remove items that don't apply to your project.)*
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Category | Technology |
+|---|---|
+| Framework | [React 19](https://react.dev/) |
+| Language | [TypeScript](https://www.typescriptlang.org/) |
+| Build Tool | [Vite](https://vite.dev/) |
+| Linting | ESLint with `typescript-eslint`, `react-hooks` and `react-refresh` plugins |
 
-Follow these steps:
+## 📁 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+gamified-ai-recycle-bin-frontend/
+├── public/                  # Static assets
+├── src/                     # Application source code
+│   └── main.tsx             # App entry point
+├── index.html               # HTML entry file
+├── eslint.config.js         # ESLint configuration
+├── tsconfig.json            # TypeScript project references
+├── tsconfig.app.json        # TypeScript config for app code
+├── tsconfig.node.json       # TypeScript config for Vite config
+├── vite.config.ts           # Vite configuration
+└── package.json             # Dependencies and scripts
 ```
 
-**Edit a file directly in GitHub**
+## ⚙️ Prerequisites
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- [Node.js](https://nodejs.org/) (v20.19+ or v22.12+ recommended for Vite 7)
+- npm (comes with Node.js)
 
-**Use GitHub Codespaces**
+## 🚀 Getting Started
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/gamified-ai-recycle-bin-frontend.git
+   cd gamified-ai-recycle-bin-frontend
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This project is built with:
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   Open the URL shown in the terminal (usually `http://localhost:5173`).
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📜 Available Scripts
 
-## How can I deploy this project?
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server with hot reload |
+| `npm run build` | Type-check and create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across the project |
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🔐 Environment Variables
 
-## Can I connect a custom domain to my Lovable project?
+If your app talks to a backend, create a `.env` file in the project root:
 
-Yes, you can!
+```env
+VITE_API_BASE_URL=http://localhost:8080
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+<img width="864" height="1232" alt="image" src="https://github.com/user-attachments/assets/e7e5e477-d272-403a-a2af-113c579af9ce" />
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🌱 Sort smart. Earn rewards. Help the planet.
